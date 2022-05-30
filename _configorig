@@ -1,0 +1,135 @@
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Andy
+title: Junior Devops
+email: andy@gmail.com
+website: www.github.com/rej0x
+
+# Dark Mode (true/false/never)
+darkmode: true
+
+# Social links
+#twitter_username: facespics
+github_username: rej0x
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+instagram_username: andy
+#linkedin_username: jameswgrant
+# xing_username: jekyll
+# pinterest_username: jekyll
+#youtube_username: globalmtb
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+additional_links:
+- title: rej0x.github.io
+  icon: fas fa-globe
+  url: https://rej0x.github.io
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
+
+  I am most skilled in: <mark>Docker</mark>, <mark>Git</mark> and <mark>Linux</mark>
+
+content:
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Super awesome project
+        link: github.com/sproogen
+        # link_text: Project Website
+        additional_links:
+          - title:  sproogen/modern-resume-theme
+            icon: fab fa-github
+            url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        description: | # this will include new lines to allow paragraphs
+          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+
+  - title: Опыт работы # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Ростовская таможня
+        link: boringcompany.com
+        # link_text: boringcompany.com
+        sub_title: Начальник отдела телекоммуникаций, связи и системотехнического обеспечения средств вычислительной техники
+        caption: Апрель 2020 - Настоящее время
+        description: | # this will include new lines to allow paragraphs
+        Обеспеспечение безотказной работы более 200 серверов, телекоммуникационного оборудования,
+        силами отдела из 8 человек, в организации с более чем 1 500 пользователей.
+        title: Ростовская таможня
+        sub_title: Заместитель начальника отдела телекоммуникаций, связи и системотехнического обеспечения средств вычислительной техники
+        caption: Декабрь 2013 - Апрель 2020
+        description: |
+        Организация каналов передачи данных для 20 удаленных филиалов, настройка оборудования, договорная работа.
+  - title: Повышение квалификации
+    layout: list
+    content:
+      - layout: left
+        title: Основы цифровой трансформации
+        caption: 2021
+        sub_title: РАНХГИС
+        title: Виртуализация на базе KVM
+        caption: 2020
+        sub_title: Академия Ай-Ти
+  - title: Образование # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Ростовская государственная академия сельскохозяйственного машиностроения
+        caption: 2001 - 2006
+        sub_title: Инженер-программист
+        description: | # this will include new lines to allow paragraphs
+        Специальность: Информационные и управляющие системы.
+  - title: A Little More About Me
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
+      - Rock climbing
+      - Gaming
+      - Knitting
+      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+
+      Look at this cool image
+      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
